@@ -8,53 +8,48 @@
 
 body {
 
-  background: #282a36;
+  background: #000;
 
 }
 
 #header {
 
-  color: #8be9fd;
+  color: #ff4954;
   font-weight: 700;
   margin-bottom: 20px;
 
 }
 
 #visor:disabled {
-
-  background: #44475a;
-  color: #8be9fd;
-  border: none;
-  padding: 10px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 10px; 
-
-
+    background: #484848;
+    color: #ff4954;
+    border: 2px solid #ff4954;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 10px;
+    max-width: 100%;
+    font-size: 16px;
 }
 
 button {
 
-  color: #8be9fd;
+  color: #fff;
   padding: 10px 0px;
-  outline: none;
   text-align: center;
   width: 50px;
-  background: #44475a;
-  border: none;
+  background: #484848;
+  border: 2px solid #444;
   font-weight: 700;
   border-radius: 10px;
   margin-left: 5px;
   margin-bottom: 5px;
-  transition: 0.4s;
-
 }
 
 button:hover {
 
-  border-radius: 15px;
-  color: #f1fa8c;
+ border: 2px solid #ff4954;
 
 }
 
@@ -62,5 +57,24 @@ button:hover {
 
   text-align: center;
   margin-top: 10px;
-
 }
+footer{
+  background: #00d563;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+}
+.foot{
+  color: #fff;
+  font-size: 35px;
+  font-family: roboto;
+  font-weight: bolder;
+}
+@media (max-width: 50em){
+  .foot{
+    font-size: 20px;
+  }
+}
+
