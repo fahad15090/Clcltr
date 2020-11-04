@@ -57,7 +57,7 @@ footer{
   width: 100%;
   text-align: center;
   bottom: 0;
-  position: fixed;
+  position: relative;
 }
 .foot{
   background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
