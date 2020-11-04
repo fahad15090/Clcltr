@@ -65,7 +65,7 @@ footer{
   -webkit-text-fill-color: transparent;
   font-size: 35px;
   font-family: sans-serif;
-  font-weight: bolder;
+  font-weight: bolder;padding: 4px;
 }
 .about {
   font-size: 32px;margin-bottom: 12px;
