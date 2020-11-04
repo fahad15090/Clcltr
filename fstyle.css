@@ -1,26 +1,20 @@
-* {
+* {/*fahad@DEV*/
 
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-
+}/*fahad@DEV*/
 body {
-
   background: #000;
-
-}
-
+}/*fahad@DEV*/
 #header {
-
-  color: #ff4954;
+ background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 700;
   margin-bottom: 20px;
-
+  font-family: sans-serif;
 }
-
-#visor:disabled {
+#visor:disabled {/*fahad@DEV*/
     background: #484848;
     color: #ff4954;
     border: 2px solid #ff4954;
@@ -32,9 +26,8 @@ body {
     max-width: 100%;
     font-size: 16px;
 }
-
 button {
-
+  font-family: sans-serif;
   color: #fff;
   padding: 10px 0px;
   text-align: center;
@@ -45,7 +38,7 @@ button {
   border-radius: 10px;
   margin-left: 5px;
   margin-bottom: 5px;
-}
+}/*fahad@DEV*/
 
 button:hover {
 
@@ -54,27 +47,59 @@ button:hover {
 }
 
 #container {
-
+/*fahad@DEV*/
   text-align: center;
   margin-top: 10px;
 }
 footer{
-  background: #00d563;
+  background: #484848;
   height: 50px;
   width: 100%;
   text-align: center;
   bottom: 0;
-  position: absolute;
+  position: fixed;
 }
 .foot{
-  color: #fff;
+  background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 35px;
   font-family: sans-serif;
   font-weight: bolder;
 }
+.about {
+  font-size: 32px;margin-bottom: 12px;
+  background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;text-align: center;display: block;
+}
+.about p{
+font-family: 'Noto Sans JP', sans-serif;
+font-style: normal;
+font-size: 2rem;
+letter-spacing: -.03rem;
+font-weight: 700; 
+}
+.about q{/*fahad@DEV*/
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+}
+img{
+  height: 260px;border-radius: 50%;margin: 80px 0 0 0;
+}
 @media (max-width: 50em){
   .foot{
-    font-size: 25px;
+    font-size: 22px;
   }
+  .about {/*fahad@DEV*/
+  font-size: 24px;word-break:break-word;}
+  img{
+  height: 160px;
 }
-
+button{
+width: 70px;
+font-size: 24px;}
+#visor:disabled{
+  font-size: 24px;
+}/*fahad@DEV*/
+}
