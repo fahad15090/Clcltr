@@ -1,283 +1,126 @@
-var stringRes, ac, c, multi, div, minus, plus, equal, zero, one, two, three, four, five, six, seven, eight, nine, visor;
-
-stringRes = "";
-ac = document.getElementById('ac');
-c = document.getElementById('c');
-multi = document.getElementById('multi');
-div = document.getElementById('div');
-minus = document.getElementById('minus');
-plus = document.getElementById('plus');
-equal = document.getElementById('equal');
-zero = document.getElementById('0');
-one = document.getElementById('1');
-two = document.getElementById('2');
-three = document.getElementById('3');
-four = document.getElementById('4');
-five = document.getElementById('5');
-six = document.getElementById('6');
-seven = document.getElementById('7');
-eight = document.getElementById('8');
-nine = document.getElementById('9');
-visor = document.getElementById('visor');
-// ---------------------------------------------------------------------------------------------
-
-
-// -------------------------------CALCULO-------------------------------
-function calcProb(x) {
-  
-  if (x.includes("*") || x.includes("/")) {
-    
-    if (x.includes("*") && x.includes("/")) {
-    
-    let multi = x.indexOf("*");
-    let div = x.indexOf("/");
-    
-      if (multi < div) {
-    
-      let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("*");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-    
-      let res = num1 * num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-    
-     } else  if (div < multi) {
-    
-      let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("/");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-    
-      let res = num1 / num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-    
-     }
-    
-    } else if (x.includes("*")) {
-      
-        let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("*");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-      
-      num1 = parseFloat(num1);
-      num2 = parseFloat(num2);
-    
-      let res = num1 * num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-      
-    } else if (x.includes("/")) {
-      
-      let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("/");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-    
-      let res = num1 / num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-      
-    }
-    
-  } else if (x.includes("+") || x.includes("-")) {
-    
-    if (x.includes("+") && x.includes("-")) {
-    
-    let plus = x.indexOf("+");
-    let minus = x.indexOf("-");
-    
-      if (plus < minus) {
-    
-      let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("+");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-      
-      num1 = parseFloat(num1);
-      num2 = parseFloat(num2);
-    
-      let res = num1 + num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-    
-     } else  if (minus < plus) {
-    
-      let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("-");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-    
-      let res = num1 - num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-    
-     }
-    
-    } else if (x.includes("+")) {
-      
-      let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("+");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-      
-      num1 = parseFloat(num1);
-      num2 = parseFloat(num2);
-    
-      let res = num1 + num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-      
-    } else if (x.includes("-")) {
-      
-      let arr = x.split(/([*/+-])/g);
-    
-      let i = arr.indexOf("-");
-    
-      let num1 = arr[i - 1];
-      let num2 = arr[i + 1];
-    
-      let res = num1 - num2;
-    
-      arr[i - 1] = res;
-      arr[i] = "";
-      arr[i + 1] = "";
-    
-      arr.splice(i, 1);
-      arr.splice(i, 1);
-    
-      let resProv = arr.join("");
-      calcProb(resProv);
-      
-    }
-    
-  } else {
-    
-    stringRes = x;
-    
-    visor.value = stringRes;
-    
+class Calculator {
+  constructor(previousOperandTextElement, currentOperandTextElement) {
+    this.previousOperandTextElement = previousOperandTextElement
+    this.currentOperandTextElement = currentOperandTextElement
+    this.clear()
   }
-  
-}
-// ---------------------------------------------------------------------------------------------
 
-
-// -------------------------------LIMPAR UM NÚMERO-------------------------------
-function clearOne() {
-  
-  if (stringRes.length > 0) {
-    
-    let i = stringRes.length;
-
-    stringRes = stringRes.slice(0, -1);
-
-    stringRes = stringRes;
-    
-    visor.value = stringRes;
-    
+  clear() {
+    this.currentOperand = ''
+    this.previousOperand = ''
+    this.operation = undefined
   }
-  
+
+  delete() {
+    this.currentOperand = this.currentOperand.toString().slice(0, -1)
+  }
+
+  appendNumber(number) {
+    if (number === '.' && this.currentOperand.includes('.')) return
+    this.currentOperand = this.currentOperand.toString() + number.toString()
+  }
+
+  chooseOperation(operation) {
+    if (this.currentOperand === '') return
+    if (this.previousOperand !== '') {
+      this.compute()
+    }
+    this.operation = operation
+    this.previousOperand = this.currentOperand
+    this.currentOperand = ''
+  }
+
+  compute() {
+    let computation
+    const prev = parseFloat(this.previousOperand)
+    const current = parseFloat(this.currentOperand)
+    if (isNaN(prev) || isNaN(current)) return
+    switch (this.operation) {
+      case '+':
+        computation = prev + current
+        break
+      case '-':
+        computation = prev - current
+        break
+      case '*':
+        computation = prev * current
+        break
+      case '÷':
+        computation = prev / current
+        break
+      default:
+        return
+    }
+    this.currentOperand = computation
+    this.operation = undefined
+    this.previousOperand = ''
+  }
+
+  getDisplayNumber(number) {
+    const stringNumber = number.toString()
+    const integerDigits = parseFloat(stringNumber.split('.')[0])
+    const decimalDigits = stringNumber.split('.')[1]
+    let integerDisplay
+    if (isNaN(integerDigits)) {
+      integerDisplay = ''
+    } else {
+      integerDisplay = integerDigits.toLocaleString('en', { maximumFractionDigits: 0 })
+    }
+    if (decimalDigits != null) {
+      return `${integerDisplay}.${decimalDigits}`
+    } else {
+      return integerDisplay
+    }
+  }
+
+  updateDisplay() {
+    this.currentOperandTextElement.innerText =
+      this.getDisplayNumber(this.currentOperand)
+    if (this.operation != null) {
+      this.previousOperandTextElement.innerText =
+        `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+    } else {
+      this.previousOperandTextElement.innerText = ''
+    }
+  }
 }
-// ---------------------------------------------------------------------------------------------
 
 
-// -------------------------------SETTAR A STRING DA CONTA-------------------------------
-function setString(x) {
-  
-  stringRes += x;
-  visor.value = stringRes;
-  
-}
-// ---------------------------------------------------------------------------------------------
+const numberButtons = document.querySelectorAll('[data-number]')
+const operationButtons = document.querySelectorAll('[data-operation]')
+const equalsButton = document.querySelector('[data-equals]')
+const deleteButton = document.querySelector('[data-delete]')
+const allClearButton = document.querySelector('[data-all-clear]')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
-// ------------------------------- CHAMA O CALCULO-------------------------------
-function equalAll() {
-  
-  calcProb(stringRes);
-  
-}
-// ---------------------------------------------------------------------------------------------
+numberButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.appendNumber(button.innerText)
+    calculator.updateDisplay()
+  })
+})
 
+operationButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    calculator.chooseOperation(button.innerText)
+    calculator.updateDisplay()
+  })
+})
 
-// -------------------------------LIMPAR TUDO-------------------------------
-function clearAll() {
-  
-  stringRes = "";
-  visor.value = stringRes;
-  
-}
+equalsButton.addEventListener('click', button => {
+  calculator.compute()
+  calculator.updateDisplay()
+})
+
+allClearButton.addEventListener('click', button => {
+  calculator.clear()
+  calculator.updateDisplay()
+})
+
+deleteButton.addEventListener('click', button => {
+  calculator.delete()
+  calculator.updateDisplay()
+})
