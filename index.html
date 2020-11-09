@@ -5,76 +5,52 @@
   <title>Calculator</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="https://gitcdn.link/repo/fahad15090/pic/master/favicon1.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="fstyle.css" type="text/css">
-  <script data-ad-client="ca-pub-6069021700308230" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head> 
-<body> <!-- FaHad Calculater -->
+<body> 
   <div id="container"> 
    <div id="header"> 
-    <h1>Your Calculator</h1> 
+    <h1>The new era of online Tools</h1> 
    </div> 
-   <div id="visorDiv"> 
-    <input id="visor" value="0" disabled> 
-   </div> 
-   <div id="buttons"> 
-    <button id="ac" onclick="clearAll()">AC</button> 
-    <button id="c" onclick="clearOne()">C</button> 
-    <button id="multi" onclick="setString('*')">×</button> 
-    <button id="div" onclick="setString('/')">÷</button> 
-    <br> <!-- FaHad Calculater -->
-    <button id="9" onclick="setString('9')">9</button> 
-    <button id="8" onclick="setString('8')">8</button> 
-    <button id="7" onclick="setString('7')">7</button> 
-    <button id="minus" onclick="setString('-')">-</button> 
-    <br> 
-    <button id="6" onclick="setString('6')">6</button> 
-    <button id="5" onclick="setString('5')">5</button> 
-    <button id="4" onclick="setString('4')">4</button> 
-    <button id="plus" onclick="setString('+')">+</button> 
-    <br> 
-    <button id="3" onclick="setString('3')">3</button> 
-    <button id="2" onclick="setString('2')">2</button> 
-    <button id="1" onclick="setString('1')">1</button> 
-    <button id="equal" onclick="equalAll()">=</button> 
-    <br> 
-    <button id="0" onclick="setString('0')">0</button> 
-   </div> 
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand" style="color:#ff4954;"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear class="span-two">AC</button>
+    <button data-delete>DEL</button>
+    <button data-operation>÷</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>*</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>+</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>-</button>
+    <button data-number>.</button>
+    <button data-number>0</button>
+    <button data-equals class="span-two">=</button>
+  </div> 
   </div>
   <div class="about">
-    <img src="./files/fahd512.jpg" class="me"><p>About me</p>
+    <img src="./files/fahd512.jpg" class="me" alt="me"><p>About me</p>
     <br>
-    <q>I'm 18 year old student,i'm not a perfect web developer but always do something that happy me and lot of people<q> Like You</q></q>
+    <q>I'm 18 year old student,i'm not a perfect web developer but always do something that happy me and lot of people<q>  Like You  </q></q>
   </div>
-  <footer>
-    <div class="foot">
-    <p>Calcul.cf ❤️ FaHaD <span>&#169;</span>2020</p>
-    </div>
-  </footer><!-- FaHad Calculater -->
+<footer>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="">FaHaD Ali</a> | </span>
+          <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
   <script  src="cscript.js"></script>
-  <!-- Quantcast Tag -->
-<script type="text/javascript">
-var _qevents = _qevents || [];
-
-(function() {
-var elem = document.createElement('script');
-elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
-elem.async = true;
-elem.type = "text/javascript";
-var scpt = document.getElementsByTagName('script')[0];
-scpt.parentNode.insertBefore(elem, scpt);
-})();
-
-_qevents.push({
-qacct:"p-null",
-uid:"__INSERT_EMAIL_HERE__"
-});
-</script>
-
-<noscript>
-<div style="display:none;">
-<img src="//pixel.quantserve.com/pixel/p-null.gif" border="0" height="1" width="1" alt="Quantcast"/>
-</div>
-</noscript>
-<!-- End Quantcast tag -->
 </body>
 </html>
