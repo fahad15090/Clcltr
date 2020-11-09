@@ -1,71 +1,104 @@
-* {/*fahad@DEV*/
-
-  margin: 0;
-  padding: 0;
-}/*fahad@DEV*/
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family:sans-serif;
+  font-weight: normal;
+}
+/*dev@FahaD*/
 body {
-  background: #000;
-}/*fahad@DEV*/
+  padding: 0;
+  margin: 0;
+  background:#000;
+}
+#container {
+  text-align: center;
+}
+/*dev@FahaD*/
 #header {
  background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
-  margin-bottom: 20px;
   font-family: sans-serif;
 }
-#visor:disabled {/*fahad@DEV*/
-    background: #484848;
-    color: #ff4954;
-    border: 2px solid #ff4954;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    font-weight: 800;
-    margin-bottom: 10px;
-    max-width: 100%;
-    font-size: 16px;
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
-button {
-  font-family: sans-serif;
-  color: #fff;
-  padding: 10px 0px;
-  text-align: center;
-  width: 50px;
-  background: #484848;
-  border: 2px solid #444;
-  font-weight: 700;
-  border-radius: 10px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}/*fahad@DEV*/
-
-button:hover {
-
- border: 2px solid #ff4954;
-
+button{
+  padding: 6px;
+}
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 2px solid #ff495491;
+  outline: none;
+  background-color: #555;
+  border-radius: 0.2em;
+  margin: 2px;
+  color: #eee;
+}
+/*dev@FahaD*/
+.calculator-grid > button:hover {
+  background-color:#c7000b;border-color: #c7000b;
 }
 
-#container {
-/*fahad@DEV*/
-  text-align: center;
-  margin-top: 10px;
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color:#444;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border: 2px solid #ff495491;
+  border-radius: 0.2em;
+  margin-bottom: 2px;
+}
+}
+
+.output .previous-operand {
+  color: #ff4954;
+  font-size: 1.8rem;
+}
+
+.output .current-operand {
+  color: #c7000b;
+  font-size: 2.5rem;
 }
 footer{
-  background: #484848;
-  height: 45px;
-  width: 100%;
-  text-align: center;
-  bottom: 0;
   position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #555;
+  color: #fff;
 }
-.foot{
-  background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
+.bottom center{
+  padding: 5px;
+  font-size: 1.9375rem;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+.bottom center a{
+  text-decoration: none;
+  background:  -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 35px;
-  font-family: sans-serif;
-  font-weight: bolder;padding: 4px;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+  text-decoration-color:linear-gradient(left,#ff8a00,#e52e71) ;
 }
 .about {
   font-size: 32px;margin-bottom: 12px;
@@ -80,26 +113,27 @@ font-size: 2rem;
 letter-spacing: -.03rem;
 font-weight: 700; 
 }
-.about q{/*fahad@DEV*/
-  font-size: 32px;
-  font-family: 'Roboto', sans-serif;margin-bottom: 18px;
+.about q{
+  font-size: 32px;margin-left: 4px;margin-right: 4px;
+  font-family: 'Roboto', sans-serif; margin-bottom: 18px;
 }
 img{
   height: 260px;border-radius: 50%;margin: 80px 0 0 0;
-}
-@media (max-width: 50em){
-  .foot{
-    font-size: 22px;
-  }
-  .about {/*fahad@DEV*/
+}/*dev@FahaD*/
+@media screen and (max-width: 900px){
+  .about {
   font-size: 24px;word-break:break-word;}
   img{
   height: 160px;
-}
-button{
-width: 70px;
-font-size: 24px;}
-#visor:disabled{
-  font-size: 24px;
-}/*fahad@DEV*/
-}
+  }
+  .bottom center{
+  padding: 5px;
+  font-size: 1.0375rem;
+  background: #151515;
+  }
+.calculator-grid{
+    min-height: 10vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 80px);
+  }
+}/*dev@FahaD*/
