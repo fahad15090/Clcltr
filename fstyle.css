@@ -36,7 +36,7 @@ button{
   font-size: 2rem;
   border: 2px solid #ff495491;
   outline: none;
-  background-color: #555;
+  background-color: #151515;
   border-radius: 0.2em;
   margin: 2px;
   color: #eee;
@@ -52,7 +52,7 @@ button{
 
 .output {
   grid-column: 1 / -1;
-  background-color:#444;
+  background-color:#151515;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
