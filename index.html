@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><!-- FaHad Calculater -->
+<html>
 <head> 
   <meta charset="utf-8"> 
   <title>Calculator</title> 
@@ -18,8 +18,27 @@
   gtag('config', 'G-ZP83SGW5FC');
 </script>
 </head> 
-<body> 
-  <div id="container"> 
+<body> <!-- Dev@FaHaD -->
+   <nav class="navbar">
+    <div class="content">
+      <div class="logo"><a href="#">FaHaD Ali</a></div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+            <span>&#10006;</span>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <span>&#9776;</span>
+      </div>
+    </div>
+  </nav>
+ <!-- Dev@FaHaD -->
+<div id="container"> 
    <div id="header"> 
     <h1>The new era of online Tools</h1> 
    </div> 
@@ -27,7 +46,7 @@
     <div class="output">
       <div data-previous-operand class="previous-operand" style="color:#ff4954;"></div>
       <div data-current-operand class="current-operand"></div>
-    </div>
+    </div><!-- Dev@FaHaD -->
     <button data-all-clear class="span-two">AC</button>
     <button data-delete>DEL</button>
     <button data-operation>÷</button>
@@ -47,20 +66,63 @@
     <button data-number>0</button>
     <button data-equals class="span-two">=</button>
   </div> 
-  </div>
+  </div><!-- Dev@FaHaD -->
   <div class="about">
-    <img src="./files/fahd512.jpg" class="me" alt="me"><p>About me</p>
+    <img src="./files/fahd512.jpg" class="me" alt="me"><p id="abt"><span id="quotes">&#10075;&#10075;</span>About me</p>
     <br>
-    <q>I'm 18 year old student,i'm not a perfect web developer but always do something that happy me and lot of people<q>  Like You  </q></q>
+     <p id="say">I'm 18 year old student,i'm not a perfect web developer but always do something that happy me and lot of people<q id="f">  Like You  </q></p>
   </div>
-<footer>
+  <div class="skill">
+    <p id="abt">My Skills</p>
+<div class="container">
+<p>Computer</p>
+<div class="container">
+  <div class="skill pc"><p id="sh">90%</p></div>
+</div>
+
+<p>Networking</p>
+<div class="container">
+  <div class="skills web"><p id="sh">80%</p></div>
+</div>
+<!-- Dev@FaHaD -->
+<p>web designing</p>
+<div class="container">
+  <div class="skill net"><p id="sh">65%</p></div>
+</div>
+
+<p>Electronic</p>
+<div class="container">
+  <div class="skill elec"><p id="sh">60%</p></div>
+</div>
+ </div>
+  </div>
+<footer><!-- Dev@FaHaD -->
       <div class="bottom">
         <center>
           <span class="credit">Created By <a href="">FaHaD Ali</a> | </span>
-          <span class="far fa-copyright"></span><span> 2020 All rights reserved.</span>
+          <span>&#169;</span><span> 2020 All rights reserved.</span>
         </center>
       </div>
-    </footer>
+    </footer><!-- Dev@FaHaD -->
   <script  src="cscript.js"></script>
+    <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
 </body>
 </html>
