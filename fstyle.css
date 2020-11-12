@@ -78,6 +78,9 @@ span:hover{
   cursor: pointer;
   display: none;
 }
+.icon.menu-btn span{
+  margin-left: -40px;
+}
 .icon.cancel-btn{
   position: absolute;
   right: 30px;
