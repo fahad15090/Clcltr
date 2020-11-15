@@ -81,7 +81,7 @@ span:hover{
   display: none;
 }
 .icon.menu-btn span{
-  margin-left: -40px;
+  margin-left: -20px;
 }
 .icon.cancel-btn{
   position: absolute;
@@ -257,6 +257,9 @@ border: none;
   }
     .icon{
     display: block;
+  }
+  .icon.cancel-btn{
+    margin-right: 10px;
   }
   .icon.hide{
     display: none;
