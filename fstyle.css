@@ -195,7 +195,8 @@ letter-spacing: -.03rem;
 font-weight: 700;margin-bottom: 2px;
 }/*dev@FahaD*/
 #say{
-  font-size: 30px;margin-left: 12px;margin-right: 12px;
+  font-size: 30px;margin-left: 24px;
+margin-right: 24px;
   font-family: 'Roboto', sans-serif; margin-bottom: 48px;
 }
 #quotes{
