@@ -195,14 +195,14 @@ letter-spacing: -.03rem;
 font-weight: 700;margin-bottom: 2px;
 }/*dev@FahaD*/
 #say{
-  font-size: 32px;margin-left: 12px;margin-right: 12px;
+  font-size: 30px;margin-left: 12px;margin-right: 12px;
   font-family: 'Roboto', sans-serif; margin-bottom: 48px;
 }
 #quotes{
   font-size: 84px;display:inline-block;margin-left:-50px;
 }
 #f{
-  font-size: 56px;
+  font-size: 50px;
 }
 .skill {
   text-align: center;color: #fff;
@@ -213,7 +213,7 @@ font-weight: 700;margin-bottom: 2px;
   -webkit-text-fill-color: transparent;
   font-family: 'Noto Sans JP', sans-serif;
 font-style: normal;
-font-size: 4rem;
+font-size: 3rem;
 letter-spacing: -.03rem;
 font-weight: 700;
 }
