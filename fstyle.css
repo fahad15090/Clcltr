@@ -236,9 +236,9 @@ img{/*dev@FahaD*/
   height: 260px;border-radius: 50%;margin: 80px 0 0 0;
 }/*skills end*/
 iframe#fform{
-  height: 900px;
+height: 900px;
 width: 100%;
-border: none;
+border: none;overflow-y: scroll;
 }
 @media screen and (max-width: 900px){
   .about #abt{
