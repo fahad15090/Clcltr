@@ -22,7 +22,9 @@
   gtag('config', 'G-ZP83SGW5FC');
 </script>
 </head> 
-<body> <!-- Dev@FaHaD -->
+<body onload="myFunction()" style="margin:0;"> <!-- Dev@FaHaD -->
+  <div id="loader"></div>
+ <div id="wmain" class="animate-bottom" style="display: none;"> 
    <nav class="navbar">
     <div class="content">
       <div class="logo"><a href="#">FaHaD Ali</a></div>
@@ -109,6 +111,7 @@
         </center>
       </div>
     </footer><!-- Dev@FaHaD -->
+  <div> 
   <script  src="cscript.js"></script>
     <script>
     const body = document.querySelector("body");
@@ -129,5 +132,17 @@
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }
   </script>
+      <script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("wmain").style.display = "block";
+}
+</script>
 </body>
 </html>
