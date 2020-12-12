@@ -240,77 +240,11 @@ font-size: 4rem;
 letter-spacing: -.03rem;
 font-weight: 700;margin-bottom: 2px;
 }
-.text--filling .char {
-  color: rgba(255,255,255,0.15);
-}
-.text--filling .char:after {
-  color: #fff;
-  visibility: visible;
-}
-.text--filling [data-scroll='in'] .char:after {
-  -webkit-clip-path: inset(0 0 0 0);
-          clip-path: inset(0 0 0 0);
-}
-.text--filling [data-scroll='out'] .char:after {
-  -webkit-clip-path: inset(100% 0 0 0);
-          clip-path: inset(100% 0 0 0);
-}
-.text--blocks [data-scroll='out'] .char {
-  visibility: hidden;
-}
-.text--blocks [data-scroll='in'] {
-  overflow: hidden;
-  position: relative;
-}
-.text--blocks [data-scroll='in'] .char {
-  transition-delay: 0.5s;
-}
-.text--blocks [data-scroll='in']:after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: #fff;
-  -webkit-animation: block 0.5s 0.25s both;
-          animation: block 0.5s 0.25s both;
-}
-@-webkit-keyframes block {
-  0% {
-    -webkit-transform: translate(-110%, 0);
-            transform: translate(-110%, 0);
-  }
-  45%, 55% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(110%, 0);
-            transform: translate(110%, 0);
-  }
-}
-@keyframes block {
-  0% {
-    -webkit-transform: translate(-110%, 0);
-            transform: translate(-110%, 0);
-  }
-  45%, 55% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(110%, 0);
-            transform: translate(110%, 0);
-  }
-}
 /*dev@FahaD*/
 #say{
   font-size: 30px;margin-left: 24px;
 margin-right: 24px;
-  font-family: 'Roboto', sans-serif; margin-bottom: 48px;
+  font-family: 'Roboto', sans-serif; margin-bottom: 48px;word-break: break-all;
 }
 #quotes{
   font-size: 84px;display:inline-block;margin-left:-50px;
