@@ -228,7 +228,7 @@ footer{/*dev@FahaD*/
   text-decoration-color:linear-gradient(left,#ff8a00,#e52e71) ;
 }/*dev@FahaD*/
 .about {
-  font-size: 32px;margin-bottom: 12px;
+  font-size: 32px;margin-bottom:220px;margin-top:220px;
   background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;text-align: center;display: block;
@@ -253,7 +253,7 @@ margin-right: 24px;
   font-size: 50px;
 }
 .skill {
-  text-align: center;color: #fff;
+  text-align: center;color: #fff;margin-top:220px;margin-bottom:220px;
 }/*dev@FahaD*/
 .skill #abt{
   background: -webkit-linear-gradient(top left,#ff8a00,#e52e71) ;
@@ -285,22 +285,8 @@ img{/*dev@FahaD*/
 iframe#fform{
 height: 950px;
 width: 100%;
-border: none;overflow-y: scroll;
+border: none;overflow-y: scroll;margin-top:100px;
 }
-p.splitting {
-  color: saturate(lighten(#182952,55%),60%);
-  .char {
-    transition: transform .3s cubic-bezier(.3, 0, .3, 1), opacity .3s linear;
-    transition-delay: calc( 20ms * var(--char-index) );
-
-  }
-
-  &[data-scroll="out"] .char {
-    opacity: 0.1;
-    transform: translateY( .25em );
-  }
-}
-
 @media screen and (max-width: 900px){
   .about #abt{
   font-size: 45px;word-break:break-word;}
