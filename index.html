@@ -11,7 +11,7 @@
 <!--  <script data-ad-client="ca-pub-6069021700308230" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
  <!--   <script src="prop.js"></script>-->
- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP83SGW5FC"></script>
 <!--<script async src="//azoaltou.com/afu.php?zoneid=3696409"></script> -->
@@ -74,12 +74,12 @@
   </div> 
   </div>
   <!-- Dev@FaHaD -->
-  <div class="about" id="fabt" data-aos="zoom-out">
+  <div class="about" id="fabt" data-splitting>
     <img src="./files/fahd512.jpg" class="me" alt="me"><p id="abt"><span id="quotes">&#10075;&#10075;</span>About me</p>
     <br>
      <p id="say">I'm inter student,i'm not a perfect web developer but always do something that excite me and lot of people<q id="f">  Like You  </q></p>
   </div>
-  <div class="skill" data-aos="zoom-out" id="fskl">
+  <div class="skill"  id="fskl" data-splitting>
     <p id="abt">My Skills</p>
 <div class="container">
 <p>Computer</p>
@@ -104,7 +104,7 @@
  </div>
   </div>
   
-   <iframe src="https://formdth.000webhostapp.com/" title="form" id="fform" scrolling="0" data-aos="zoom-out"></iframe> 
+   <iframe src="https://formdth.000webhostapp.com/" title="form" id="fform" scrolling="0" data-splitting></iframe> 
 <footer><!-- Dev@FaHaD -->
       <div class="bottom">
         <center>
@@ -146,8 +146,6 @@ function showPage() {
   document.getElementById("wmain").style.display = "block";
 }
 </script>
-  <script>
-    AOS.init();
-  </script>    
+<script> Splitting(); </script>    
 </body>
 </html>
