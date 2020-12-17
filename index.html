@@ -4,15 +4,14 @@
   <meta charset="utf-8"> 
   <title>Calculator</title> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="propeller" content="7dc167b3d0b7404cb57578e51b3f5b04">
   <link rel="shortcut icon" href="https://gitcdn.link/repo/fahad15090/pic/master/favicon1.ico">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="fstyle.css" type="text/css">
+  <link rel="stylesheet" href="/files/sal.scss" type="text/css">
 <!--  <script data-ad-client="ca-pub-6069021700308230" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
  <!--   <script src="prop.js"></script>-->
- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/files/sal.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP83SGW5FC"></script>
 <!--<script async src="//azoaltou.com/afu.php?zoneid=3696409"></script> -->
 <script>
@@ -74,39 +73,39 @@
   </div> 
   </div>
   <!-- Dev@FaHaD -->
-  <div class="about" id="fabt" data-aos="slide-up">
-    <img src="./files/fahd512.jpg" class="me" alt="me" data-aos="fade-up"><p id="abt" ><span id="quotes">&#10075;&#10075;</span>About me</p>
+  <div class="about" id="fabt" data-sal="slide-up" data-sal-delay="100">
+    <img src="./files/fahd512.jpg" class="me" alt="me" data-sal="slide-up" data-sal-delay="100"><p id="abt" ><span id="quotes">&#10075;&#10075;</span>About me</p>
     <br>
-     <p id="say" data-aos="slide-up">I'm inter student,i'm not a perfect web developer but always do something that excite me and lot of people<q id="f">  Like You  </q></p>
+     <p id="say" data-sal="slide-up" data-sal-delay="100">I'm inter student,i'm not a perfect web developer but always do something that excite me and lot of people<q id="f">  Like You  </q></p>
   </div>
   <div class="skill"  id="fskl">
-    <p id="abt" data-aos="slide-up" >My Skills</p>
+    <p id="abt" data-sal="slide-up" data-sal-delay="100">My Skills</p>
 <div class="container">
 <p data-aos="slide-up">Computer</p>
 <div class="container">
-  <div class="pc" data-aos="slide-up"><p id="sh" data-aos="slide-up">90%</p></div>
+  <div class="pc" data-sal="slide-up" data-sal-delay="100"><p id="sh" data-sal="slide-up" data-sal-delay="100">90%</p></div>
 </div>
 
 <p data-aos="slide-up">Networking</p>
 <div class="container">
-  <div class="web" data-aos="slide-up"><p id="sh" data-aos="slide-up">80%</p></div>
+  <div class="web" data-sal="slide-up" data-sal-delay="100"><p id="sh" data-sal="slide-up" data-sal-delay="100">80%</p></div>
 </div>
 <!-- Dev@FaHaD -->
 <p data-aos="slide-up">web designing</p>
 <div class="container">
-  <div class="net" data-aos="slide-up"><p id="sh" data-aos="slide-up">65%</p></div>
+  <div class="net" data-sal="slide-up" data-sal-delay="100"<p id="sh" data-sal="slide-up" data-sal-delay="100">65%</p></div>
 </div>
 
 <p data-aos="slide-up">Electronic</p>
 <div class="container">
-  <div class="elec" data-aos="slide-up"><p id="sh" data-aos="slide-up">60%</p></div>
+  <div class="elec" data-sal="slide-up" data-sal-delay="100"><p id="sh" data-sal="slide-up" data-sal-delay="100">60%</p></div>
 </div>
  </div>
   </div>
  <div class="adg">   <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=calcul15-20&marketplace=amazon&region=US&placement=B07GBZ4Q68&asins=B07GBZ4Q68&linkId=0fe4a843fca64cbe8a1750259fa3ad8b&show_border=false&link_opens_in_new_window=true&price_color=c7000b&title_color=0066c0&bg_color=000000"></iframe>
 <iframe id="adf" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=calcul15-20&marketplace=amazon&region=US&placement=B07RGZ5NKS&asins=B07RGZ5NKS&linkId=8fc418bab970711466e4301a017fcea0&show_border=false&link_opens_in_new_window=true&price_color=c7000b&title_color=0066c0&bg_color=000000"></iframe>
    </div>
-   <iframe src="https://formdth.000webhostapp.com/" title="form" id="fform" scrolling="0" data-aos="slide-up"></iframe> 
+   <iframe src="https://formdth.000webhostapp.com/" title="form" id="fform" scrolling="0" data-sal="slide-up" data-sal-delay="100"></iframe> 
  <footer>
   <!-- Dev@FaHaD -->
       <div class="bottom">
@@ -148,30 +147,6 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("wmain").style.display = "block";
 }
-</script>
-<script>
-AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
-
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 120, // offset (in px) from the original trigger point
-  delay: 0, // values from 0 to 3000, with step 50ms
-  duration: 400, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
-</script>    
+</script>  
 </body>
 </html>
