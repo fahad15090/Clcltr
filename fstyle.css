@@ -8,7 +8,7 @@ html{
 body {
   padding: 0;
   margin: 0;
-  background:url(./files/back-blk.png);
+  background:url(/files/back-blk.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -167,7 +167,7 @@ button{
   font-size: 2rem;
   border: 2px solid #ff495491;
   outline: none;
-  background-color: #151515;
+  background-color:transparent;
   border-radius: 0.2em;
   margin: 2px;
   color: #eee;
@@ -183,7 +183,7 @@ button{
 
 .output {
   grid-column: 1 / -1;
-  background-color:#151515;
+  background-color:transparent;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -269,7 +269,7 @@ font-weight: 700;
 }
 .container {
   width: 98%;
-  background-color: #000;margin-left: 15px;text-align:center;margin-bottom:20px;
+  background-color:transparent;margin-left: 15px;text-align:center;margin-bottom:20px;
 }
 .container p{
   font-size:24px;color:#ec4752;font-family: 'Noto Sans JP', sans-serif;
