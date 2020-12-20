@@ -7,11 +7,11 @@
   <link rel="shortcut icon" href="https://gitcdn.link/repo/fahad15090/pic/master/favicon1.ico">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="fstyle.css" type="text/css">
-  <link rel="stylesheet" href="aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <!--  <script data-ad-client="ca-pub-6069021700308230" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
   <!-- Global site tag (gtag.js) - Google Analytics -->
  <!--   <script src="prop.js"></script>-->
-  <script src="aos.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZP83SGW5FC"></script>
 <!--<script async src="//azoaltou.com/afu.php?zoneid=3696409"></script> -->
 <script>
@@ -21,8 +21,19 @@
 
   gtag('config', 'G-ZP83SGW5FC');
 </script>
+<script>
+  function myFunction(){
+    
+    var myVar=setTimeout(showPage, 3000);
+  }
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("wmain").style.display = "block";
+    document.getElementById("blk").style.background = "url(./files/back-blk.png)"; 
+  }
+  </script>
 </head> 
-<body onload="myFunction()" style="margin:0;"> <!-- Dev@FaHaD -->
+<body onload="myFunction()" style="margin:0;" id="blk"> <!-- Dev@FaHaD -->
   <div id="loader"></div>
  <div id="wmain" class="animate-bottom" style="display: none;"> 
    <nav class="navbar">
@@ -30,7 +41,7 @@
       <div class="logo"><a href="#">Calculator</a></div>
       <ul class="menu-list">
         <div class="icon cancel-btn">
-            <span>&#10006;</span>
+            <span class="lgo">&#10006;</span>
         </div>
         <li><a href="#">Home</a></li>
         <li><a href="#fabt">About</a></li>
@@ -38,7 +49,7 @@
         <li><a href="#fskl">Education</a></li>
       </ul>
       <div class="icon menu-btn">
-        <span>&#9776;</span>
+        <span class="lgo">&#9776;</span>
       </div>
     </div>
   </nav>
@@ -49,7 +60,7 @@
    </div> 
   <div class="calculator-grid">
     <div class="output">
-      <div data-previous-operand class="previous-operand" style="color:#ff4954;"></div>
+      <div data-previous-operand class="previous-operand" style="color:#c7000b;"></div>
       <div data-current-operand class="current-operand"></div>
     </div><!-- Dev@FaHaD -->
     <button data-all-clear class="span-two">AC</button>
@@ -74,13 +85,13 @@
   </div>
   <!-- Dev@FaHaD -->
   <div class="about" id="fabt" data-aos="fade-up">
-    <img src="./files/fahd512.jpg" class="me" alt="me" data-aos="fade-up"><p id="abt" ><span id="quotes">&#10075;&#10075;</span>About me</p>
+    <div class="circle-img"><img src="./files/fahd512.jpg" class="me" alt="me" data-aos="fade-up"></div><p id="abt" ><span id="quotes">&#10075;&#10075;</span>About me</p>
     <br>
      <p id="say" data-aos="fade-up">I'm inter student,i'm not a perfect web developer but always do something that excite me and lot of people<q id="f">  Like You  </q></p>
   </div>
   <div class="skill"  id="fskl">
     <p id="abt" data-aos="fade-up">My Skills</p>
-<div class="container">
+<div class="skill-box">
 <p data-aos="slide-up">Computer</p>
 <div class="container">
   <div class="pc" data-aos="fade-up"><p id="sh" data-aos="fade-up">90%</p></div>
@@ -110,8 +121,7 @@
   <!-- Dev@FaHaD -->
       <div class="bottom">
         <center>
-          <span class="credit">Created By <a href="">FaHaD Ali</a> | </span>
-          <span>&#169;</span><span> 2020 All rights reserved.</span>
+          <span class="credit">Created with <span class="hrt">&#10084;</span> by <a href="">FaHaD Ali</a></span>
         </center>
       </div>
     </footer><!-- Dev@FaHaD -->
@@ -136,21 +146,10 @@
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }
   </script>
-      <script>
-var myVar;
 
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("wmain").style.display = "block";
-}
-</script>
   <script>
     AOS.init({
-    disable: false,duration: 400,once:false,easing: 'ease',
+    disable: false,duration: 500,once:false,easing: 'ease',
     });
   </script>    
 </body>
