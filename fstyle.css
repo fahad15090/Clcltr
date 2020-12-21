@@ -89,7 +89,7 @@ html{
   top: 0;
 }/*dev@FahaD*/
 .navbar.sticky{
-  background:#a5a5a53d;backdrop-filter:blur(10px);
+  background:#a5a5a53d;backdrop-filter:blur(5px);
   padding: 15px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -197,7 +197,7 @@ button{
   border: none;
   border-radius: 0.2em;
   margin-bottom: 2px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
 }/*dev@FahaD*/
 .output .previous-operand {
   color: #c7000b;
@@ -212,8 +212,8 @@ footer{/*dev@FahaD*/
   position: relative;
   bottom: 0px;
   width: 100%;
-  background: #ffffff3d;
-  color: #ffc179;
+  background: #a5a5a53d;
+  color: #ffc179;backdrop-filter:blur(5px);
 }
 .bottom center{
   padding: 5px;
@@ -269,7 +269,8 @@ font-weight: 700;
   margin-left: 15px;
   text-align:center;
   margin-bottom:20px;
-  backdrop-filter:blur(5px);
+  backdrop-filter: blur(3px);
+  background: #a5a5a53d;
 }
 .skill-box p{
   font-size:24px;color:#ffc179;font-family: 'Noto Sans JP', sans-serif;
@@ -288,13 +289,12 @@ img{/*dev@FahaD*/
   height: 260px;border-radius: 50%;margin: 80px 0 0 0;margin-top: 10px;
 }
 .circle-img{
-  border-radius: 50%;
   background: #ffffff3d;
   width: 280px;
   height: 280px;
   position: relative;
   margin: 30px auto 20px auto;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(1px);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
