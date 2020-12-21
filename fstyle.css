@@ -89,7 +89,7 @@ html{
   top: 0;
 }/*dev@FahaD*/
 .navbar.sticky{
-  background:#a5a5a53d;backdrop-filter:blur(5px);
+  background:#a5a5a53d;backdrop-filter:blur(10px);
   padding: 15px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -125,7 +125,7 @@ html{
 }
 .menu-list li a:hover{
   color: #fff;background: #c7000b;border-color: #ffffff3d;
-  box-shadow: 1px 1px 13px 0px #c7000b;backdrop-filter: blur(5px);
+  box-shadow: 1px 1px 13px 0px #c7000b;
 }
 .icon{
   color: #fff;
@@ -218,7 +218,7 @@ footer{/*dev@FahaD*/
 .bottom center{
   padding: 5px;
   font-size: 1.9375rem;
-  background:#ffffff3d;backdrop-filter:blur(5px);
+  background:#5a5a5a3d;
 }
 .bottom center a{
   text-decoration: none;
