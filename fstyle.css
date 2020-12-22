@@ -37,7 +37,7 @@ html{
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
-  border: 16px solid #ffffff15;backdrop-filter:blur(5px);
+  border: 16px solid #ffffff15;backdrop-filter:blur(1px);
   border-radius: 50%;
   border-top: 16px solid #ec4752;
   -webkit-animation: spin 2s linear infinite;
@@ -89,7 +89,7 @@ html{
   top: 0;
 }/*dev@FahaD*/
 .navbar.sticky{
-  background:#a5a5a53d;backdrop-filter:blur(5px);
+  background:#ffffff3d;backdrop-filter:blur(2px);
   padding: 15px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -174,7 +174,7 @@ button{
   border-radius: 0.2em;
   margin: 2px;
   color: #eee;
-  backdrop-filter:blur(2px);
+  backdrop-filter:blur(0.5px);
 }
 
 .calculator-grid > button:hover {
@@ -198,7 +198,7 @@ button{
   border: none;
   border-radius: 0.2em;
   margin-bottom: 2px;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(0.5px);
 }/*dev@FahaD*/
 .output .previous-operand {
   color: #c7000b;
@@ -214,7 +214,7 @@ footer{/*dev@FahaD*/
   bottom: 0px;
   width: 100%;
   background: #a5a5a53d;
-  color: #ffc179;backdrop-filter:blur(5px);
+  color: #ffc179;backdrop-filter:blur(1px);
 }
 .bottom center{
   padding: 5px;
@@ -293,7 +293,7 @@ img{/*dev@FahaD*/
   height: 280px;
   position: relative;
   margin: 30px auto 20px auto;
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(0.5px);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
