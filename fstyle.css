@@ -37,7 +37,7 @@ html{
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
-  border: 16px solid #ffffff15;backdrop-filter:blur(1px);
+  border: 16px solid #ffffff15;
   border-radius: 50%;
   border-top: 16px solid #ec4752;
   -webkit-animation: spin 2s linear infinite;
@@ -89,7 +89,7 @@ html{
   top: 0;
 }/*dev@FahaD*/
 .navbar.sticky{
-  background:#ffffff3d;backdrop-filter:blur(1px);
+  background:#ff7800;
   padding: 15px 0;
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
 }
@@ -174,7 +174,6 @@ button{
   border-radius: 0.2em;
   margin: 2px;
   color: #eee;
-  backdrop-filter:blur(1px);
 }
 
 .calculator-grid > button:hover {
@@ -198,7 +197,6 @@ button{
   border: none;
   border-radius: 0.2em;
   margin-bottom: 2px;
-  backdrop-filter: blur(1px);
 }/*dev@FahaD*/
 .output .previous-operand {
   color: #c7000b;
@@ -214,8 +212,7 @@ footer{/*dev@FahaD*/
   bottom: 0px;
   width: 100%;
   background: #a5a5a53d;
-  color: #ffc179;backdrop-filter:blur(1px);
-}
+  color: #ffc179;
 .bottom center{
   padding: 5px;
   font-size: 1.9375rem;
